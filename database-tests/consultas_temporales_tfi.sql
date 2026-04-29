@@ -32,6 +32,15 @@ UPDATE especialidades
 SET especialidades.nombre = 'NUEVO NOMBRE'
 WHERE especialidades.id_especialidad = 2;
 
+-- crear especialidades
+INSERT INTO `especialidades` (nombre) VALUES ('nombre_especialidad');
+
+-- buscar los datos de los pacientes
+SELECT *
+FROM pacientes AS p
+INNER JOIN usuarios AS u
+ON u.id_usuario = p.id_usuario; 
+
 -- deshacer cambios de las consultas de prueba
 ROLLBACK;
 
