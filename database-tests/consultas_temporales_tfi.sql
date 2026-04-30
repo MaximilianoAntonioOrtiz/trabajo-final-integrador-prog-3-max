@@ -41,6 +41,14 @@ FROM pacientes AS p
 INNER JOIN usuarios AS u
 ON u.id_usuario = p.id_usuario; 
 
+-- buscar los datos de los pacientes incluida su obra social
+SELECT p.id_paciente, u.nombres, u.apellido, u.documento, u.email, os.nombre 
+FROM pacientes AS p
+INNER JOIN usuarios AS u
+ON u.id_usuario = p.id_usuario
+INNER JOIN obras_sociales AS os
+ON os.id_obra_social = p.id_obra_social; 
+
 -- deshacer cambios de las consultas de prueba
 ROLLBACK;
 
