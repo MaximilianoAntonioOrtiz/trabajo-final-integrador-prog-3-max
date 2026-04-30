@@ -211,6 +211,14 @@ tienes que importar el archivo prog3_turnos.sql que se dio para el tfi
 Clase Teórica-Práctica 09/04/2026 min 51:25
 Listar, crear y editar especialidades.
 vamos a  dejar la consulta para luego pasarla al backend
+min 54:00 clase repaso sql
+listar especialidades
+
+**sobre la consulta insert**
+a la hora de insertar los valores (para especialidades se puede ignorar el id porque es autoincremetal y activo tenia un valor por defecto que es 1)
+intentar agregar (insert) una especialidad que ya existe no deberia poder pasar
+nuestra configuracon para la bbdd no es case sensitive por lo que clinica y CLINICA se tomarian como iguales y daria error agregar una especilidad de igual nombre pro con mayusculas distintas 
+
 
 
 &#x20;
