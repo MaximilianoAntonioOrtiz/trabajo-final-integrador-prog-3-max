@@ -1,0 +1,24 @@
+{
+  "name": "turnos",
+  "version": "1.0.0",
+  "description": "gestion de turnos medico",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximilianoAntonioOrtiz/trabajo-final-integrador-prog-3-max.git"
+  },
+  "author": "prog3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximilianoAntonioOrtiz/trabajo-final-integrador-prog-3-max/issues"
+  },
+  "homepage": "https://github.com/MaximilianoAntonioOrtiz/trabajo-final-integrador-prog-3-max#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

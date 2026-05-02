@@ -217,7 +217,14 @@ listar especialidades
 **sobre la consulta insert**
 a la hora de insertar los valores (para especialidades se puede ignorar el id porque es autoincremetal y activo tenia un valor por defecto que es 1)
 intentar agregar (insert) una especialidad que ya existe no deberia poder pasar
-nuestra configuracon para la bbdd no es case sensitive por lo que clinica y CLINICA se tomarian como iguales y daria error agregar una especilidad de igual nombre pro con mayusculas distintas 
+nuestra configuracon para la bbdd no es case sensitive por lo que clinica y CLINICA se tomarian como iguales y daria error agregar una especilidad de igual nombre pro con mayusculas distintas
+
+**sobre package.json**
+se agrego en "scripts" lo siguiente:
+"dev": "node --watch index.js"
+esto es para que cuando uses npm run dev pueda usar watch y estar activo siempre escuchando y no tener que recargar la app todo el tiempo.
+hay personas que prefieren usar nodemon pero no es necesario ya que para eso esta watch
+
 
 
 
