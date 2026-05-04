@@ -1,15 +1,6 @@
 *Notas sobre la Clase Práctica - 07/04/2026 link https://www.youtube.com/watch?v=PDHBWaqt\_kg*
-
-
-
 *notas Clase Teórica-Práctica 09/04/2026  link https://www.youtube.com/watch?v=yrzCePNDRaw*
-
-
-
 *presentación del tfi y sus lineamientos*
-
-
-
 *Registro de turnos* (min 25:30)
 
 **Sobre la tabla turnos\_reservas:**
