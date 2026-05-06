@@ -50,14 +50,32 @@ app.get('/especialidades', async (req, res) => {
     }
 })
 
+app.post('/especialidades', async (req, res) => {
+    try {
+        const {nombre} = req.body;
+        const sql = 'INSERT INTO especialidades (nombre) VALUES (?)';
+        const [result] = await pool.execute(sql, [nombre]);
+        //console.log(result);
+        if (result.affectedRows > 0) {
+            res.status(201).send({'estado' : true, 'msg' : `ID Creado ${result.insertId}`})
+        }
+
+    } catch(error){//sirve para capturar errores de red
+        console.log(error);
+        res.status(500).send({'estado' : false, 'msg' : 'Error interno' });
+    }
+    
+})
 
 
+/*
 app.post('/', (req, res) => {
     console.log('post');// lo usas como control
     console.log(req.body.nombre);
     res.send({'estado': 'ok', 'msg' : 'Creado'});
     
 })
+*/
 
 process.loadEnvFile();
 const PUERTO = process.env.PUERTO;
