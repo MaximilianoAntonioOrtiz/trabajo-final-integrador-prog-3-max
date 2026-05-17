@@ -1,16 +1,16 @@
 info:
-  name: crear_especialidad
+  name: modificar_especialidades
   type: http
   seq: 1
 
 http:
-  method: POST
-  url: http://localhost:3000/especialidades
+  method: PUT
+  url: http://localhost:3000/especialidades/16
   body:
     type: json
     data: |-
       {
-        "nombre" : "prueba_nombre"
+        "nombre" : "nombrecambiadohj33"
       }
   auth: inherit
 
