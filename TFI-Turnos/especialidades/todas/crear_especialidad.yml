@@ -1,0 +1,22 @@
+info:
+  name: crear_especialidad
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/especialidades
+  body:
+    type: json
+    data: |-
+      {
+        "nombre" : "prueba_nombre"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​
